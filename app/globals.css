@@ -16,6 +16,16 @@
   }
 }
 
+
+/* styles/globals.css */
+@font-face {
+  font-family: 'clash-display';
+      src: url('/fonts/ClashDisplay-Medium.woff2') format('woff2'),
+       url('/fonts/ClashDisplay-Medium.woff2') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
