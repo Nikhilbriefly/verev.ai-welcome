@@ -76,8 +76,8 @@ const LandingPage = () => {
    
      </div>
     {/* hero text */}
-      <h1 className="md:text-6xl text-balance mt-8 text-[26px] sm:text-[23px]  font-bold bg-gradient-to-r from-zinc-300 via-zinc-500 to-zinc-200 bg-clip-text text-transparent text-center " style={{fontFamily:'clash-display' , fontWeight:200}}>Write like a pro, even when <br /> you're thinking like you.</h1>
-      <p className="leading-snug text-center tracking-normal text-zinc-400 font-light md:text-[20px] text-[12px] mt-4" >Write Like a Boss & Research Like a Champ: Powerful Tools  at Your  Fingertips.</p>
+      <h1 className="md:text-6xl text-balance mt-8 text-[26px] sm:text-[23px]  font-bold bg-gradient-to-r from-zinc-300 via-zinc-500 to-zinc-200 bg-clip-text text-transparent text-center " style={{fontFamily:'clash-display' , fontWeight:200}}>Perfect your communication, <br /> as effortlessly as breathing.</h1>
+      <p className="leading-snug text-center tracking-normal text-zinc-400 font-light md:text-[20px] text-[12px] mt-4" >Struggling with professional communication? We've got you covered. <br /> Our AI assistant perfects your writing, seamlessly in any workspace.</p>
     {/* hero text end */}
 
 

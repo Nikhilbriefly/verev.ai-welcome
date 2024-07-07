@@ -41,7 +41,7 @@ export async function sendMail  ({
     let mainOptions = {
       from:'verve.ai.build@gmail.com',
       to:to,
-      subject:'Welcome to verve.ai , Yyou are on this list!',
+      subject:'Welcome to verve.ai , You are on this list!',
       template:'index'
     }
   
