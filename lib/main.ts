@@ -48,6 +48,8 @@ export async function sendMail  ({
   
     try {
 
+      console.log(mainOptions);
+      
       const sendMailNow = await transport.sendMail(mainOptions);
 
       console.log("Everything is working fine");
