@@ -10,7 +10,7 @@ const LandingPage = () => {
 
 
   const [Email, setEmail] = useState<string>('')
-  const [ShowMailPopUP, setShowMailPopUP] = useState(true);
+  const [ShowMailPopUP, setShowMailPopUP] = useState(false);
   
     
 
