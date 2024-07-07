@@ -1,19 +1,14 @@
 
 
 import nodemailer from "nodemailer";
-
+import hbs from "nodemailer-express-handlebars";
+import path from "path";
 
 
 export async function sendMail  ({
     to,
-    name,
-    subject,
-    body,
   }:{
     to:string,
-    name:string,
-    subject:string,
-    body:string
   })  {
 
     console.log("this id working fine");
@@ -27,27 +22,33 @@ export async function sendMail  ({
         pass:'sert zgsw jihj qgfa'
       }
     });
-  
+
+      transport.use('compile' , hbs({
+        viewEngine:{
+          defaultLayout:false,
+        },
+        viewPath:'./mail/'
+      }));
+
     try {
       const testRes = await transport.verify();
       console.log(testRes);
       
     } catch (error) {
       console.log(error);
-      
+    }
+
+    let mainOptions = {
+      from:'verve.ai.build@gmail.com',
+      to:to,
+      subject:'Welcome to verve.ai , Yyou are on this list!',
+      template:'index'
     }
   
   
     try {
 
-      console.log("working cool");
-      
-      const sendMailNow = await transport.sendMail({
-        from:'verve.ai.build@gmail.com',
-        to,
-        subject,
-        html:body
-      })
+      const sendMailNow = await transport.sendMail(mainOptions);
 
       console.log("Everything is working fine");
       

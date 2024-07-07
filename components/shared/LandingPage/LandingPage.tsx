@@ -19,9 +19,10 @@ const LandingPage = () => {
         alert("Please eneter valid email")
       }else{
         sendWelcomeMail(Email);
-        setShowMailPopUP(true);
+        setTimeout(() => {
+          setShowMailPopUP(true);
+        }, 1000);
       }
-      
     }
 
 
