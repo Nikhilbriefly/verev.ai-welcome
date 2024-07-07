@@ -15,13 +15,16 @@ export async function sendMail  ({
     subject:string,
     body:string
   })  {
+
+    console.log("this id working fine");
+    
     const {SMTP_EMAIL , SMTP_PASSWORD} = process.env;
   
     const transport = nodemailer.createTransport({
       service:"gmail",
       auth:{
-        user:SMTP_EMAIL,
-        pass:SMTP_PASSWORD
+        user:'verve.ai.build@gmail.com',
+        pass:'sert zgsw jihj qgfa'
       }
     });
   
@@ -36,8 +39,11 @@ export async function sendMail  ({
   
   
     try {
+
+      console.log("working cool");
+      
       const sendMailNow = await transport.sendMail({
-        from:SMTP_EMAIL,
+        from:'verve.ai.build@gmail.com',
         to,
         subject,
         html:body
