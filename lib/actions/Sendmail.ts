@@ -9,8 +9,6 @@ export const sendWelcomeMail = (email: string)=>{
         console.log(email);
         sendMail({
             to:email,
-            
-            
         });
     } catch (error) {
         console.log(error);
